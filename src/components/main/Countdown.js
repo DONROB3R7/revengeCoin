@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 // Images 
 import img3 from "../../img/img3.png";
 
@@ -61,8 +60,8 @@ class Countdown extends React.Component {
     return (
       <div className="container countdown text-center">
 
-        <h2>Countdown Presale!</h2>
-        <p>PRESALE STARTS IN</p>
+        <h2>Countdown Presale !</h2>
+        <p className="text-small">Presale Starts in:</p>
         <div id="clockdiv">
           <ul>
             <li className="days">{this.state.daysSpan} <span>Days</span></li>
@@ -72,7 +71,7 @@ class Countdown extends React.Component {
         </ul>
         </div>
 
-        <button type="button" class="btn btn-danger  btn-lg" ahref="https://dxsale.app/">DxSale</button>
+        <button type="button" className="btn btn-danger  btn-lg" ahref="https://dxsale.app/">DxSale</button>
 
       </div>
     );

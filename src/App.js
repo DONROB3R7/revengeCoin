@@ -3,6 +3,7 @@ import Hero from "./components/main/Hero";
 import Footer from "./components/main/Footer";
 import Countdown from "./components/main/Countdown";
 import Content from "./components/main/Content";
+import Tokenomics from "./components/main/Tokenomics";
 
 class Main extends Component {
 
@@ -12,6 +13,7 @@ class Main extends Component {
       <Hero/>
       <div className="main">
         <Countdown/>
+        <Tokenomics />
         <Content />
         <Footer/>
       </div>

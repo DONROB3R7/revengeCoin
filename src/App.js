@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Hero from "./components/main/Hero";
 
-function App() {
-  return (
-    <div className="App">
-        <h1>Revenge Coin</h1>
-    </div>
-  );
+class Main extends Component {
+
+  render() {
+    return(
+    <React.Fragment>
+      <Hero/>
+    </React.Fragment>
+    )
+  }
+
 }
 
-export default App;
+export default Main;

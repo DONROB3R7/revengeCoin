@@ -56,11 +56,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
 var data = [];
 
 data['piedata'] = [
-  { label: "Burn token", value: 20, color: 'red' },
+  { label: "Burn token", value: 27, color: 'red' },
   { label: "Public Sale", value: 70, color: 'blue' },
-  { label: "Marketing", value: 3, color: 'pink' },
-  { label: "Air Drop", value: 2, color: 'green' },
-  { label: "Dev Teams", value: 5, color: 'other' },
+  { label: "Marketing", value: 1, color: 'pink' },
+  { label: "Air Drop", value: 1, color: 'green' },
+  { label: "Dev Teams", value: 1, color: 'other' },
 ];
 
 
@@ -71,9 +71,9 @@ $(document).ready(function() {
     var chartLabel = $(this).attr('data-pie-label');
     var piedata = data[$(this).attr('data-pie')];
     
-    var width = 300 * 2.2,
-    height = 300 * 2.2,
-    radius = 140 * 2.2;
+    var width = 300 * 1.5,
+    height = 300 * 1.5,
+    radius = 140 * 1.5;
 
     var pie = d3.layout.pie()
       .value(function(d) {
@@ -166,34 +166,35 @@ $(document).ready(function() {
           $(chartId + ' [data-slice=' + i + ']').css('background', 'rgba(0,0,0,0.2)');
         });
 
-  
-    maxCirc.append('span')
-      .attr('class', 'label')
-      .text(chartLabel);
-
-    maxCirc.append('span')
-      .attr('class', 'value')
-      .attr('style', function() {
-        var top = piedata.filter(function( obj ) {
-          return obj.value == max;
-        });
-        var gradient = gradients.filter(function( obj ) {
-          return obj.id == top[0].color;
-        });
-        return 'color: ' + gradient[0].end;
-      })
-      .text(function() {
-        var top = piedata.filter(function( obj ) {
-          return obj.value == max;
-        });
-        return top[0].label + ': ' + top[0].value + '%';
       });
-  });
-});
+   });
+    // maxCirc.append('span')
+    //   .attr('class', 'label')
+    //   .text(chartLabel);
+
+//     maxCirc.append('span')
+//       .attr('class', 'value')
+//       .attr('style', function() {
+//         var top = piedata.filter(function( obj ) {
+//           return obj.value == max;
+//         });
+//         var gradient = gradients.filter(function( obj ) {
+//           return obj.id == top[0].color;
+//         });
+//         return 'color: ' + gradient[0].end;
+//       })
+//       .text(function() {
+//         var top = piedata.filter(function( obj ) {
+//           return obj.value == max;
+//         });
+//         return top[0].label + ': ' + top[0].value + '%';
+//       });
+//   });
+// });
 
 
     </script>
-    <div id="root"></div>
+    <div  id="root"></div>
 
     <!--
       This HTML file is a template.

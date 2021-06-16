@@ -2,85 +2,37 @@ import React from "react";
 
 const Footer = () => {
   return (
-        <footer className="text-center text-lg-start text-white border-top">
+        <footer className="text-lg-start text-white border-top border-bot">
             <div className="container">       
             <div className="row mt-4">
-        
-                <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase">See other books</h5>
 
-                <ul className="list-unstyled mb-0">
-                    <li>
-                    <a href="#!" className="text-white"><i className="fas fa-book fa-fw fa-sm me-2"></i>Bestsellers</a>
-                    </li>
-                    <li>
-                    <a href="#!" className="text-white"><i className="fas fa-book fa-fw fa-sm me-2"></i>All books</a>
-                    </li>
-                    <li>
-                    <a href="#!" className="text-white"><i className="fas fa-user-edit fa-fw fa-sm me-2"></i>Our authors</a>
-                    </li>
+            <div class="col-lg-6 col-md-12 col-sm-12 info">
+                <h4>Information</h4>
+                <ul>
+                    <code>The team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do
+                        conduct your due diligence and consult your financial advisor before making any investment decisions.
+                        By purchasing $VENGE. you agree that you are not purchasing a security or investment and you agree
+                        to hold the team harmless and not liable for any losses or taxes you may incur.
+                </code>
                 </ul>
-                </div>
-        
-                <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase">Execution of the contract</h5>
-
-                <ul className="list-unstyled">
-                    <li>
-                    <a href="#!" className="text-white"><i className="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Supply</a>
-                    </li>
-                    <li>
-                    <a href="#!" className="text-white"><i className="fas fa-backspace fa-fw fa-sm me-2"></i>Returns</a>
-                    </li>
-                    <li>
-                    <a href="#!" className="text-white"><i className="far fa-file-alt fa-fw fa-sm me-2"></i>Regulations</a>
-                    </li>
-                    <li>
-                    <a href="#!" className="text-white"><i className="far fa-file-alt fa-fw fa-sm me-2"></i>Privacy policy</a>
-                    </li>
-                </ul>
-                </div>
-        
-                <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase">Publishing house</h5>
-
-                <ul className="list-unstyled">
-                    <li>
-                    <a href="#!" className="text-white">The BookStore</a>
-                    </li>
-                    <li>
-                    <a href="#!" className="text-white">123 Street</a>
-                    </li>
-                    <li>
-                    <a href="#!" className="text-white">05765 NY</a>
-                    </li>
-                    <li>
-                    <a href="#!" className="text-white"><i className="fas fa-briefcase fa-fw fa-sm me-2"></i>Send us a book</a>
-                    </li>
-                </ul>
-                </div>
-
-                <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase">Write to us</h5>
-
-                <ul className="list-unstyled">
-                    <li>
-                    <a href="#!" className="text-white"><i className="fas fa-at fa-fw fa-sm me-2"></i>Help in purchasing</a>
-                    </li>
-                    <li>
-                    <a href="#!" className="text-white"><i className="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Check the order status</a>
-                    </li>
-                    <li>
-                    <a href="#!" className="text-white"><i className="fas fa-envelope fa-fw fa-sm me-2"></i>Join the newsletter</a>
-                    </li>
-                </ul>
-                </div>
-            
             </div>
-            
+
+
+            <div class="col-lg-3 col-md-12 col-sm-12 social offset-lg-3">
+                <h4>Social Media</h4>
+                <ul>
+                    <li><a href="https://twitter.com/elonmusk" target="_blank" >Twitter</a></li>
+                    <li><a href="https://telegram.org/" target="_blank" >Telegram</a></li>
+                    <li><a href="https://pocmon.medium.com/" target="_blank" >Medium</a></li>
+                    <li><a href="https://www.reddit.com/" target="_blank" >Reddit</a></li>
+                </ul>
             </div>
-            <div className="text-center p-3">
+
+            </div>
+
+            <div className="text-center p-3 ">
             © 2021 The Vengeful Spirit | All Rights Reserved
+            </div>
             </div>
         </footer>
   );

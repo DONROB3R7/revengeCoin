@@ -2,14 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
   rel="stylesheet"
@@ -22,6 +21,7 @@ rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
 />
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <!--
@@ -42,6 +42,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+
 
     <script>
      var gradients = [
@@ -168,29 +170,15 @@ $(document).ready(function() {
 
       });
    });
-    // maxCirc.append('span')
-    //   .attr('class', 'label')
-    //   .text(chartLabel);
-
-//     maxCirc.append('span')
-//       .attr('class', 'value')
-//       .attr('style', function() {
-//         var top = piedata.filter(function( obj ) {
-//           return obj.value == max;
-//         });
-//         var gradient = gradients.filter(function( obj ) {
-//           return obj.id == top[0].color;
-//         });
-//         return 'color: ' + gradient[0].end;
-//       })
-//       .text(function() {
-//         var top = piedata.filter(function( obj ) {
-//           return obj.value == max;
-//         });
-//         return top[0].label + ': ' + top[0].value + '%';
-//       });
-//   });
-// });
+  
+   // Toggle Animation by Class
+    $(window).scroll(function(){
+      if($(document).scrollTop() > 100){
+        $('header').addClass('animate');
+      }else{
+        $('header').removeClass('animate');
+      }
+    })
 
 
     </script>

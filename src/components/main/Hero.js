@@ -1,5 +1,8 @@
 import React from 'react';
 
+//Audio Sound 
+import backgroundAudi from "../../audio/background_music2.mp3";
+
 const Hero = () => {
   return (
       <React.Fragment>
@@ -8,8 +11,14 @@ const Hero = () => {
             <p className="title-small">Welcome to</p>
             <h1 className="title-big">The Vengeful spirit</h1>
             <p className="title">The Vengeful spirit Protocol is an experiment in decentralized spontaneous community building</p>
-            <button type="button" className="btn btn-danger  btn-lg">Buy Now On Pancakeswap</button>
-            <button type="button" className="btn btn-danger  btn-lg">Lite Paper</button>
+            <audio controls controlsList="nodownload">
+                <source src={backgroundAudi} type="audio/mpeg"/>
+            </audio>
+            <a className="btn btn-danger  btn-lg" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x7fc6b75feb0eb32a89a7d6a654c4db967894c658" target="_black">Buy Now On Pancakeswap</a>
+            <a className="btn btn-danger  btn-lg" href="https://t.me/vengefulspiritofficial" target="_black">Join Our Telegram <i className="fab fa-telegram-plane"></i></a>
+            <p className="bsc-address">BSC Contract Address</p>
+             <span>0x7fc6b75feb0eb32a89a7d6a654c4db967894c658</span>
+            
           
         </div>
     <div className="layer-bg layer" data-type="parallax" data-depth="0.10"></div>
